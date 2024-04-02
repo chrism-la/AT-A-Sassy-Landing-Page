@@ -1,4 +1,6 @@
 @import 'config.scss';
+@import 'utilities.scss';
+@import 'btnConfig.scss';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,16 +19,30 @@ img {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
-.hero {
-    .box {
-        .nav {
-            h1 {
-                color: white;
-            }
-        }
+nav {
+    color: white;
+    background-color: $primary-color;
+    display: flex;
+    padding: 20px;
+
+    li {
+        list-style: none;
+        padding: 10px;
     }
+}
+
+ul {
+    display: flex;
+}
+
+.hero-content {
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    padding: 20px;
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
