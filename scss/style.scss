@@ -15,6 +15,7 @@ body {
 
 img {
     border-radius: 50%;
+    width: 50%;
 }
 
 a {
@@ -26,7 +27,12 @@ nav {
     color: white;
     background-color: $primary-color;
     display: flex;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+    h1 {
+        font-size: 24px;
+    }
 
     li {
         list-style: none;
@@ -38,11 +44,16 @@ ul {
     display: flex;
 }
 
-.hero-content {
-    background-color: $primary-color;
-    color: white;
-    display: flex;
-    padding: 20px;
+.hero {
+    .hero-content {
+        background-color: $primary-color;
+        color: white;
+        display: flex;
+        padding: 20px;
+        div {
+            margin: auto;
+        }
+    }
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
